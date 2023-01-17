@@ -1,0 +1,121 @@
+:root {
+    --main-color: #2196f3;
+}
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+.game {
+    min-height: 100vh;
+    background-color: #eee;
+}
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+.name {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.message {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+}
+.message span {
+    font-weight: bold;
+    color: #009688;
+}
+.message span::before {
+    content: "[ ";
+}
+.message span::after {
+    content: " ]";
+}
+.start, .restart, .quit {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #009688;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.quit {
+    margin-top: 10px;
+    background-color: #ff3526;
+}
+.restart.inactive,
+.quit.inactive {
+    display: none;
+}
+.the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+}
+.input {
+    margin: 15px auto;
+    width: 60%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--main-color);
+    border-radius: 6px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    caret-color: var(--main-color);
+}
+.upcoming-words {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.upcoming-words div {
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+.controls span{
+    font-weight: bold;
+    color: #009688;
+}
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+.finish .good {
+    color: var(--main-color);
+}
+.finish .bad {
+    color: #ff3526;
+}
